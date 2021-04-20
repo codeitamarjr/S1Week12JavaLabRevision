@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         int sumOdd=0, sumEven=0;//start the SUM variable with 0
-        //start the for loop to count from 0 till 100
+        //start the for loop to count from 0 till 100 add 1 for each loop
         for (int counter = 0; counter <=100 ; counter++ ){
 
             //if the counter is NOT divisible by two is odd

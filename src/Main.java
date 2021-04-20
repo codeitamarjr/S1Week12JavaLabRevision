@@ -2,15 +2,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int sum=0;//start the SUM variable
-        //start the for loop to count from 1 till 99, instead of start the for-loop with 1 and add 2 for each loop
-        //I'm checking the odds through an IF statement and NOT gate:
-        for (int counter = 0; counter <=99 ; counter++ ){
-            //if the number is divisible by two is even so the NOT gate will got the opposite which means all the odd numbers
+        int sumOdd=0, sumEven=0;//start the SUM variable with 0
+        //start the for loop to count from 0 till 100
+        for (int counter = 0; counter <=100 ; counter++ ){
+
+            //if the number is not divisible by two is odd
             if(!(counter % 2 == 0)){
-                sum += counter; //add the counter which is an odd number to sum, and add again and so on...
+                sumOdd += counter; //if its odd Java will add this odd to sumOdd
+            }
+
+            //if the number is divisible by two is even
+            if((counter % 2 == 0)){
+                sumEven += counter; //if its even Java will add this even to sumEven
             }
         }
-        System.out.println("The sum of the all odds between 1 and 99 is: "+sum);
+
+        System.out.println("The sum of all Odd between 1 and 100 is: "+sumOdd);
+        System.out.println("The sum of all even between 1 and 100 is: "+sumEven);
     }
 }
